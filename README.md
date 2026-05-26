@@ -31,7 +31,7 @@ Autores:
 | `limpieza.py` | Imputa `gamma_cpm`, marca outliers IQR, estandariza `ReactorType`, geocodifica |
 | `fusion.py` | Haversine vectorizado manda top 5 plantas más cercanas por estación |
 | `analisis.py` | 15 queries con visualizaciones respondiendo las 5 preguntas de negocio|
-|`pipeline`| Ejecuta el proyecto desde el perfilado hasta el análisis|
+|`pipeline.py`| Ejecuta el proyecto desde el perfilado hasta el análisis|
 
 ---
 
