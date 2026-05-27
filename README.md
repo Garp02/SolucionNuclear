@@ -61,4 +61,4 @@ Autores:
 
 ## Auxiliares
 
-[Presentacion Radiación Nuclear y Plantas de Energía](https://canva.link/4e0vy3xfn4bl7rq])
+[Presentacion Radiación Nuclear y Plantas de Energía](https://canva.link/4e0vy3xfn4bl7rq)
