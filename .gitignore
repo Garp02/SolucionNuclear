@@ -1,3 +1,5 @@
 datos/
-datos_procesados/
 Auxiliares/
+datos_procesados/
+!datos_procesados/reportes/
+!datos_procesados/reportes/**
