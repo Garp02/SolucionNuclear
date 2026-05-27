@@ -3,9 +3,9 @@
 Autores: 
 - Díaz Juarez Ana Sofía
 - Esteva Gallegos Carlos Fabián
-. León Navarrete Edmundo Adam
-- Martinez Tapia Fernando
+- León Navarrete Edmundo Adam
 - Munive Ramírez Ibrahim
+- Tapia Martínez Fernando
 
 ## Framework
 **TDQM (Total Data Quality Management)** aplicado al dominio de monitoreo ambiental de radiación. Contexto regulatorio: CNSNS / IAEA / NRC.
