@@ -58,3 +58,7 @@ Autores:
 | P5 | ¿Qué estaciones presentan los mayores problemas de calidad de datos? | `dose_nSv_h`, `gamma_imputed`, `is_outlier` |
 
 > P3 y P4 usan `gamma_cpm` en lugar de `dose_nSv_h` por el 69.9% de nulos en esa columna.
+
+## Auxiliares
+
+[Presentacion Radiación Nuclear y Plantas de Energía](https://canva.link/4e0vy3xfn4bl7rq])
