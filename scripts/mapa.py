@@ -1025,9 +1025,9 @@ function resetFilters() {{
 # Punto de entrada
 def main():
     parser = argparse.ArgumentParser(description="Genera mapa HTML de plantas nucleares.")
-    parser.add_argument("--plants",    type=Path, default=DEFAULT_PLANTS,    help="Ruta a nuclear_plants_clean.csv")
+    parser.add_argument("--plants", type=Path, default=DEFAULT_PLANTS, help="Ruta a nuclear_plants_clean.csv")
     parser.add_argument("--radiation", type=Path, default=DEFAULT_RADIATION, help="Ruta a radiation_db.csv")
-    parser.add_argument("--output",    type=Path, default=DEFAULT_OUTPUT,    help="Ruta de salida .html")
+    parser.add_argument("--output", type=Path, default=DEFAULT_OUTPUT, help="Ruta de salida .html")
     args = parser.parse_args()
 
     log.info("mapa.py — Generador de mapa didáctico")
@@ -1035,20 +1035,20 @@ def main():
     log.info(f"Buscando radiación en: {args.radiation}")
     plants = load_plants(args.plants)
     stations = load_radiation(args.radiation)
+    # stations = stations[stations["country"].str.upper().isin(["US", "USA"])].reset_index(drop=True)
 
     log.info(f"Plantas cargadas: {len(plants)}")
     log.info(f"Estaciones cargadas: {len(stations)}")
-    
 
     html = build_html(plants, stations)
 
     args.output.parent.mkdir(parents=True, exist_ok=True)
     with open(args.output, "w", encoding="utf-8") as f:
+        
         f.write(html)
 
     log.info(f"Mapa generado en: {args.output}")
     log.info(f"Abre en tu navegador: file://{args.output}")
-
 
 if __name__ == "__main__":
     main()
